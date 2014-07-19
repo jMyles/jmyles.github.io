@@ -10,7 +10,7 @@
         return wheelman.scrollEm(scrollTop);
       }
     });
-    wheelman.landings = [0, 1030, 1480, 2790, 4100, 7100, 7920, 8650, 9300, 11050, 11625, 12200, 13625, 14570, 16700];
+    wheelman.landings = [0, 1030, 1480, 2790, 4100, 7100, 7920, 8650, 9300, 11050, 11625, 12200, 13625, 14500, 16500, 19000];
     first = new wheelman.Zone(0, 500, $('#first'));
     first.addFade(0, 500, direction = "out");
     third = new wheelman.Zone(1250, 2400, $('#third'));

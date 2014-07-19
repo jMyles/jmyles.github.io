@@ -16,7 +16,7 @@
     distance = Math.abs(position - scrollTop);
     timing = speed ? speed : wheelman.atMost(3000, (distance * 1.5) + 500);
     wheelman.scrollOrders += 1;
-    if (wheelman.DEBUG) {
+    if (window.WHEELMAN_DEBUG) {
       $('#monitor').html(wheelman.scrollOrders + ': Scrolling from ' + scrollTop + ' to ' + position + "taking " + timing);
     }
     return $('html,body').animate({
@@ -225,7 +225,7 @@
     });
   });
 
-  if (window.DEBUG) {
+  if (window.WHEELMAN_DEBUG) {
     $("div").click(function() {
       return wheelman.nextZone();
     });
