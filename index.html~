@@ -1,0 +1,324 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+
+
+<script type="text/javascript" src="one-week.js"></script>
+
+
+<style>
+@font-face {
+	font-family: veteran-typewriter;
+	src: url('veteran_typewriter.ttf');
+}
+
+p {
+   margin:0;
+}
+
+a:link, a:visited {
+   color:inherit;
+}
+
+.writer {
+    font-family:veteran-typewriter;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.highest {
+    font-size:3em;
+    margin:0;
+}
+
+#show {
+    margin-left: 50px;
+    margin-top: 200px;
+    height: 19000px;
+}
+
+
+#first {
+    position: fixed;
+}
+
+#second {
+    position:absolute;
+    top:1200px;
+    font-size:20px;
+}
+
+#third {
+    position:fixed;
+}
+
+#fourth {
+    font-size: 25px;    
+}
+
+#fifth {
+    font-size: 26px;
+    position: fixed;
+    top: 360px;
+}
+
+#fifth .writer {
+    font-size:55px;
+}
+
+#sixth {
+    font-size: 50px;
+}
+
+#sixth1 {
+  top:200px;
+}
+
+#sixth2 {
+  top:260px;
+}
+
+#sixth3 {
+  top:350px;
+}
+
+#sixth4 {
+  top:410px;
+  font-size: 40px;
+  margin-left: 150px;
+}
+
+#sixth p {
+    position: fixed;
+    white-space:nowrap;
+}
+
+#seventh {
+    text-align:right;
+}
+
+#seventh div {
+    position: fixed;
+    width:700px;
+    left:0;
+}
+
+#seventh .writer {
+  font-size:55px;
+}
+
+#seventh .monospace {
+  font-size:20px;
+}
+
+#eigth {
+    font-size: 30px;
+    left: 130px;
+    position: fixed;
+    top: 100px;
+}
+
+#eigth #eigth2 {
+  text-align:right;
+  margin-top:100px;
+}
+
+#ninth div {
+  position:fixed;
+  left:0;
+}
+
+#ninth #parch {
+    background-image: url("13-old-parchment-background-sml.jpg");
+    height: 100%;
+    left: 0;
+    opacity: 2.91;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+    opacity: 0.15;
+}
+
+#ninth #available {
+    text-align: center;
+    top: 40px;
+    width: 100%;
+}
+
+#ninth #email {
+    top:90px;
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    color: #007E8C;
+}
+
+#ninth .social-link {
+  width: 100%;
+  text-align: center;
+  font-family: veteran-typewriter;
+}
+
+#ninth .social-link img {
+  width:64px;
+}
+
+#ninth .social-link span {
+    bottom: 22px;
+    font-size: 28px;
+    position: relative;
+}
+
+#ninth #my-github {
+    top:225px;
+}
+
+#ninth #my-github span {
+    left: 25px;
+}
+
+#ninth #slashRoot-github {
+    top:325px;
+}
+
+#ninth #slashRoot-github span {
+    right: 25px;
+}
+
+#ninth #twitter {
+    top:425px;
+    width: 100%; 
+}
+
+#ninth #twitter span {
+  left: 25px;
+}
+
+#ninth a {
+  text-decoration:none;
+}
+
+#ninth .projects {
+  width: 100%;
+  text-align: center;
+  background-color:black;
+  color:white;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-size:20px;
+}
+
+#ninth .projects a {
+  color: #007e8c;
+}
+
+#ninth #wheelman {
+  top:500px;
+}
+
+#monitor {
+  position:fixed;
+  width:300px;
+  height:300px;
+  top:0;
+  right:0;
+}
+
+</style>
+
+<div id="monitor"></div>
+
+<div id="show">
+  <div id="first" class="writer">
+    <p class="highest">No, I won't work for you full-time.</p>
+    <p style="margin-left: 220px; margin-top:40px;" class="highest">But I'll do something better.</p>
+  </div>
+  
+  <div id="second" class="monospace">
+    <p>Have you noticed that most "agile" shops end up in a never-ending</p>
+    <p style="margin-left:65px;"> sprint? They begin one sprint on the day that another ends.</p>
+  </div>
+
+  <div id="third" class="monospace">
+    <p><strong>Newsflash:</strong> That's not what "sprint" means.  The metaphor is lost.</p>
+  </div>
+
+  <div id="fourth" class="monospace">
+    <p>A team member can appear before you every day, but can</p>
+    <p>they continue to seriously play rough?  For how long?</p>
+  </div>
+
+  <div id="fifth" class="monospace">
+   <p><span class="five-half">For me, the answer is </span><span class="writer">one week each month.</span></p>
+   <p class="five-half" style="font-size:20px; margin-left:447px;">(maybe one week out of three.)</p>
+  </div>
+
+  <div id="sixth" class="writer">
+    <p id="sixth1">Forget sprinting.</p>
+    <p id="sixth2">Think of me as a relief pitcher.</p>
+    <p id="sixth3">I can continue to throw the heat</p>
+    <p id="sixth4">when your other devs start to slow down.</p>
+  </div>
+
+  <div id="seventh">
+    <div id="seventh1">
+      <p class="writer">Doing TDD?</p>
+      <p class="monospace">I'll make your tests pass.  Better yet, I'll write the</p>
+      <p class="monospace">failing tests that show you where you really are.</p>
+    </div>
+
+    <div id="seventh2">
+      <p class="writer">Writing Docs for your API?</p>
+      <p class="monospace">You need a recurring pair of fresh eyes.</p>
+    </div>
+
+    <div id="seventh3">
+      <p class="writer">On a deadline?</p>
+      <p class="monospace">I love those.</p>
+    </div>
+  </div>
+
+  <div id="eigth">
+    <div id="eigth1">
+      <p>I submit to you that programming, more than any other art,</p>
+      <p>requires that you step back for a while and come back fresh</p>
+      <p>to battle the most difficult problems.</p>
+    </div>
+
+    <div id="eigth2">
+      <p>If I know that I can rest after a week, I can give you my</p>
+      <p>entire gas tank.  Heck, I'll bring a pillow and pull all-</p>
+      <p>nighters with your team if that's your thing.</p>
+    </div>
+  </div>
+
+  <div id="ninth">
+    <div id="parch"></div>
+    <div id="available" class="writer">Available August 18th.</div>
+    <div id="email" class="monospace"><a href="mailto:justin@justinholmes.com">justin@justinholmes.com</a></div>
+    <div class="social-link" id="my-github">
+      <a href="https://github.com/jMyles">
+        <img src="GitHub-Mark-64px.png"/><span>My Github</span>
+      </a>
+    </div>
+    <div class="social-link" id="slashRoot-github">
+      <a href="https://github.com/slashRoot">
+        <span>slashRoot's Github</span><img src="GitHub-Mark-64px.png"/>
+      </a>
+    </div>
+    <div class="social-link" id="twitter">
+      <a href="https://twitter.com/jMylesHolmes">
+        <img src="twitter.png"><span>@jMylesHolmes</span>
+      </a>
+    </div>
+
+    <div id="wheelman" class="monospace projects">
+      This presentation powered by <a href="https://github.com/jMyles/wheelman">wheelman</a>.
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="wheelman.js"></script>

@@ -1,0 +1,213 @@
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+
+<script type="text/coffeescript" src="wheelman.coffee"></script>
+<script type="text/coffeescript" src="unsettings_wheelman.coffee"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+body {
+  background-color: #007000;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.note {
+  font-family:.5em;
+}
+
+#show {
+  height:15700px;
+}
+
+#first h1 {
+  position:fixed;
+  top: 200px;
+  left: 300px;
+  font-size:100px;
+}
+
+#second {
+  position:fixed;
+  font-size:40px;
+  width:1000px;
+}
+
+#second .note {
+  background-color:white;
+  color: #007000;}
+
+#second-note-2, #second-note-4 {
+  text-align:center;
+}
+
+#third {
+  position:fixed;
+}
+
+#third img {
+  position:fixed;
+}
+
+#fourth {
+  position:fixed;
+}
+
+#fourth-2 {
+  margin-top:50px;
+}
+
+#fourth-3 {
+  background-color:red;
+  width:100%;
+  height:500px;
+  position:fixed;
+  top:0;
+}
+
+#fourth-3 img {
+  margin-top:200px;
+}
+
+#fifth {
+  position:fixed;
+  font-size:40px;
+  width:700px;
+}
+
+#fifth li {
+  position:relative;
+}
+
+#fifth #other-logos{
+  top:100px;
+  width:1000px;
+  position:absolute;
+}
+
+#fifth img {
+  height:300px;
+}
+
+#sixth {
+  position:fixed;
+  font-size:40px;
+}
+
+#seventh {
+  position:fixed;
+  font-size:60px;
+}
+
+#eigth {
+  position:fixed;
+  font-size:40px;
+}
+
+#ninth {
+  position:fixed;
+  font-size:40px;
+}
+
+
+
+</style>
+
+<div id="show">
+
+  <div id="first">
+    <h1>
+      Django Unsetting'd
+    </h1>
+  </div>
+
+  <div id="second">
+    <h2>
+      What is the unsettings project?
+    </h2>
+
+    <div class="note" id="second-note-1">
+      An effort to change project-wide settings
+    </div>
+
+    <div class="note" id="second-note-2">
+      FROM
+    </div>
+
+    <div class="note" id="second-note-3">
+      a globally incorporated single entity <br/> (ie, django.conf.settings)
+    </div>
+
+    <div class="note" id="second-note-4">
+      TO
+    </div>
+
+    <div class="note" id="second-note-5">
+      a set of individually injected objects, configurable with a diverse and flexible variety of patterns.
+    </div>
+
+  </div>
+
+  <div id="third">
+    <img id="third-1" src="mail-doc.png"/>
+    <img id="third-2" src="first-error.png"/>
+  </div>
+
+  <div id="fourth">
+    <img id="fourth-1" src="email_backend.png"/>
+    <img id="fourth-2" src="no_settings_here.png"/>
+    <div id="fourth-3">
+      <img src="second-error.png"/>
+    </div>
+  </div>
+
+  <ul id="fifth">
+    <h2>Why unsettings?</h2>
+    <li id="fifth-1">Remove burdensome import logic</li>
+    <li id="fifth-2">Signal to python community: "We are you."</li>
+    <li id="fifth-3">Signal to new django contributers: Your work belongs here, and it won't be locked away behind our configuration drama.</li>
+
+    <div id="other-logos">
+      <img src="bottle-logo.png">
+      <img src="pyramid-logo.jpeg">
+      <img src="flask-logo.png">
+    </div>
+  </ul>
+
+  <ul id="sixth">
+    <h2>The third and final step in Django's puberty.</h2>
+
+    <li id="sixth-1">1) custom auth.User shows that Django cares about its people.</li>
+    <li id="sixth-2">2) migrations shows that Django cares about its people's right to change our mind.</li>
+    <li id="sixth-3">3) unsettings shows that the Django tribe does not treat its project as an apache plugin</li>
+    <div id="sixth-4">but as feature-rich python subculture.</div>
+  </ul>
+
+  <div id="seventh">
+    <h2>The current state of unsettings</h2>
+  </div>
+
+  <div id="eigth">
+    <h2>What you can do</h2>
+
+    <li id="eigth-1">Listen to Django News Podcast</li>
+    <li id="eigth-2">Look at Pull Request</li>
+    <li id="eigth-3">Work on unsettings at sprints</li>
+    <li id="eigth-4">Think of Django as a community and a movement, not just a product</li>
+    <li id="eigth-5">Lobby your core team</li>
+  </div>
+
+  <ul id="ninth">
+    <li>justin@justinholmes.com</li>
+    <li>github.com/jMyles</li>
+    <li>github.com/jMyles/wheelman</li>
+  </ul>
+
+</div>
+
+
+
+<script type="text/javascript" src="coffee-script.js"></script>
