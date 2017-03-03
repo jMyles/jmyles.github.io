@@ -1,0 +1,6 @@
+<div class="iotd-instance">
+    <a href="{{ url }}">
+        <img alt="{{ caption }}" src="{{ thumb_url }}"/>
+        <div class="caption">{{ caption }}</div>
+    </a>
+</div>

@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+<title>this is the bus.</title>
+
+<meta name="description" content="this is the bus">
+<meta name="author" content="Chelsea Kaye and Justin Myles">
+
+<link rel="stylesheet" href="/apps/internal/css/styles.css?v=1.0">
+<link href="/apps/internal/css/fonts.css" rel="stylesheet">
+
+<script src="/apps/internal/js/day-parse-meta.js"></script>
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+
+<script src="/apps/iotd/templates/iotdInstance.handlebars"></script>
+<script src="/apps/places/templates/locationInstance.handlebars"></script>
+

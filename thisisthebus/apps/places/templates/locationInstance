@@ -1,0 +1,9 @@
+<a href="{{map}}">
+  <img src="/apps/places/img/{{thumb}}" />
+
+    <div class="locationNameMask"></div>
+  <div class="locationNameCaption">
+    <div>{{small_name}}</div>
+    <div>{{big_name}}</div>
+  </div>
+</a>

@@ -1,0 +1,16 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['locationInstance'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<a href=\""
+    + alias4(((helper = (helper = helpers.map || (depth0 != null ? depth0.map : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"map","hash":{},"data":data}) : helper)))
+    + "\">\n  <img src=\"/apps/places/img/"
+    + alias4(((helper = (helper = helpers.thumb || (depth0 != null ? depth0.thumb : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"thumb","hash":{},"data":data}) : helper)))
+    + "\" />\n\n    <div class=\"locationNameMask\"></div>\n  <div class=\"locationNameCaption\">\n    <div>"
+    + alias4(((helper = (helper = helpers.small_name || (depth0 != null ? depth0.small_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"small_name","hash":{},"data":data}) : helper)))
+    + "</div>\n    <div>"
+    + alias4(((helper = (helper = helpers.big_name || (depth0 != null ? depth0.big_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"big_name","hash":{},"data":data}) : helper)))
+    + "</div>\n  </div>\n</a>\n";
+},"useData":true});
+})();
