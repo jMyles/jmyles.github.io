@@ -2,11 +2,9 @@
 
 <html lang="en">
 <head>
-    <script src="/apps/internal/js/jquery-3.1.1.min.js"
+    <script src="../../apps/internal/js/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
-    <script src="/apps/internal/js/handlebars.runtime.min.js"></script>
-    <script src="/apps/internal/templates/head.handlebars"></script>
 
     <meta charset="utf-8">
 
@@ -15,24 +13,23 @@
     <meta name="description" content="this is the bus">
     <meta name="author" content="Chelsea Kaye and Justin Myles">
 
-    <link rel="stylesheet" href="/apps/internal/css/styles.css?v=1.0">
-    <link href="/apps/internal/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../apps/internal/css/styles.css?v=1.0">
+    <link href="../../apps/internal/css/fonts.css" rel="stylesheet">
 
-    <script src="/apps/internal/js/day-parse-meta.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
 
-    <script src="/apps/iotd/templates/iotdInstance.handlebars"></script>
-    <script src="/apps/places/templates/locationInstance.handlebars"></script>
-
-
-
-    <script type="text/javascript">
-    $( document ).ready(function() {
-      fill_location_for_day("latest", "#currentLocation");
-    });
-    </script>
+    
+        <link rel="stylesheet" href="../../apps/swipebox/css/swipebox.min.css">
+        <script src="../../apps/swipebox/js/swipebox-pr298.js"></script>
+        <script type="text/javascript">
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            $( '.swipebox' ).swipebox();
+        });
+        </script>
+    
 
 </head>
 
@@ -94,13 +91,13 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2016-03-01!Turns-out-Notch-is-handle-with-a-trowe.jpg">
+    <a href="/apps/iotd/img/2016-03-01!Turns-out-Notch-is-handle-with-a-trowe.jpg" title="Turns out Notch is handy with a trowel." class="swipebox">
         <img alt="Turns out Notch is handy with a trowel." src="/apps/iotd/img/2016-03-01!Turns-out-Notch-is-handle-with-a-trowe!thumb.jpg"/>
     </a>
 </span>
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-03-01!...and-a-garden-fork..jpg">
+    <a href="/apps/iotd/img/2017-03-01!...and-a-garden-fork..jpg" title="...and a garden fork." class="swipebox">
         <img alt="...and a garden fork." src="/apps/iotd/img/2017-03-01!...and-a-garden-fork.!thumb.jpg"/>
     </a>
 </span>
@@ -206,7 +203,7 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-21!LeAnn-and-Catfish-feeling-at-home-in-the-woods..jpg">
+    <a href="/apps/iotd/img/2017-02-21!LeAnn-and-Catfish-feeling-at-home-in-the-woods..jpg" title="LeAnn and Catfish feeling at home in the woods." class="swipebox">
         <img alt="LeAnn and Catfish feeling at home in the woods." src="/apps/iotd/img/2017-02-21!LeAnn-and-Catfish-feeling-at-home-in-the-woods.!thumb.jpg"/>
     </a>
 </span>
@@ -237,7 +234,7 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-19!Notch-can&#39;t-quite-see-his-new-Italian-family..jpg">
+    <a href="/apps/iotd/img/2017-02-19!Notch-can&#39;t-quite-see-his-new-Italian-family..jpg" title="Notch can&#39;t quite see his new Italian family." class="swipebox">
         <img alt="Notch can&#39;t quite see his new Italian family." src="/apps/iotd/img/2017-02-19!Notch-can&#39;t-quite-see-his-new-Italian-family.!thumb.jpg"/>
     </a>
 </span>
@@ -318,7 +315,7 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-14!When-in-Rainbow,-do-as-Rainbows-do..jpg">
+    <a href="/apps/iotd/img/2017-02-14!When-in-Rainbow,-do-as-Rainbows-do..jpg" title="When in Rainbow, do as Rainbows do." class="swipebox">
         <img alt="When in Rainbow, do as Rainbows do." src="/apps/iotd/img/2017-02-14!When-in-Rainbow,-do-as-Rainbows-do.!thumb.jpg"/>
     </a>
 </span>
@@ -349,7 +346,7 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-11!HackerNews-in-the-woods..jpg">
+    <a href="/apps/iotd/img/2017-02-11!HackerNews-in-the-woods..jpg" title="HackerNews in the woods." class="swipebox">
         <img alt="HackerNews in the woods." src="/apps/iotd/img/2017-02-11!HackerNews-in-the-woods.!thumb.jpg"/>
     </a>
 </span>
@@ -405,13 +402,13 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-06!One-of-the-main-music-camps-at-the-Rainbow-Gathering---all-were-magnets-to-Fibonacci..jpg">
+    <a href="/apps/iotd/img/2017-02-06!One-of-the-main-music-camps-at-the-Rainbow-Gathering---all-were-magnets-to-Fibonacci..jpg" title="One of the main music camps at the Rainbow Gathering - all were magnets to Fibonacci." class="swipebox">
         <img alt="One of the main music camps at the Rainbow Gathering - all were magnets to Fibonacci." src="/apps/iotd/img/2017-02-06!One-of-the-main-music-camps-at-the-Rainbow-Gathering---all-were-magnets-to-Fibonacci.!thumb.jpg"/>
     </a>
 </span>
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-06!Trade-Circle---the-closest-thing-you&#39;ll-find-to-the-NYSE-at-Rainbow..jpg">
+    <a href="/apps/iotd/img/2017-02-06!Trade-Circle---the-closest-thing-you&#39;ll-find-to-the-NYSE-at-Rainbow..jpg" title="Trade Circle - the closest thing you&#39;ll find to the NYSE at Rainbow." class="swipebox">
         <img alt="Trade Circle - the closest thing you&#39;ll find to the NYSE at Rainbow." src="/apps/iotd/img/2017-02-06!Trade-Circle---the-closest-thing-you&#39;ll-find-to-the-NYSE-at-Rainbow.!thumb.jpg"/>
     </a>
 </span>
@@ -442,7 +439,7 @@
                     <div class="iotdsContainer">
                         
                             <span class="iotd-instance">
-    <a href="/apps/iotd/img/2017-02-04!Our-hike-into-the-middle-of-nowhere-in-Ocala..jpg">
+    <a href="/apps/iotd/img/2017-02-04!Our-hike-into-the-middle-of-nowhere-in-Ocala..jpg" title="Our hike into the middle of nowhere in Ocala." class="swipebox">
         <img alt="Our hike into the middle of nowhere in Ocala." src="/apps/iotd/img/2017-02-04!Our-hike-into-the-middle-of-nowhere-in-Ocala.!thumb.jpg"/>
     </a>
 </span>
@@ -471,6 +468,99 @@
                 <div class="right">
                     <div class="daySummary"></div>
                     <div class="iotdsContainer">
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dayContainer">
+                <h3>2016-02-04</h3>
+                <h4 class="bigDate"></h4>
+                <div class="left">
+                    
+                        <div class="locationContainer"><a href="">
+  <img src="/apps/places/img/" />
+
+    <div class="locationNameMask"></div>
+  <div class="locationNameCaption">
+    <div></div>
+    <div></div>
+  </div>
+</a>
+</div>
+                    
+                </div>
+                <div class="right">
+                    <div class="daySummary"></div>
+                    <div class="iotdsContainer">
+                        
+                            <span class="iotd-instance">
+    <a href="/apps/iotd/img/2016-02-04!Dispersed-camping-within-Ocala-National-Forest.-What-a-handsome-bus!.jpg" title="Dispersed camping within Ocala National Forest. What a handsome bus!" class="swipebox">
+        <img alt="Dispersed camping within Ocala National Forest. What a handsome bus!" src="/apps/iotd/img/2016-02-04!Dispersed-camping-within-Ocala-National-Forest.-What-a-handsome-bus!!thumb.jpg"/>
+    </a>
+</span>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dayContainer">
+                <h3>2016-01-21</h3>
+                <h4 class="bigDate"></h4>
+                <div class="left">
+                    
+                        <div class="locationContainer"><a href="">
+  <img src="/apps/places/img/" />
+
+    <div class="locationNameMask"></div>
+  <div class="locationNameCaption">
+    <div></div>
+    <div></div>
+  </div>
+</a>
+</div>
+                    
+                </div>
+                <div class="right">
+                    <div class="daySummary"></div>
+                    <div class="iotdsContainer">
+                        
+                            <span class="iotd-instance">
+    <a href="/apps/iotd/img/2016-01-21!Justin-is-offered-a-mini-scuba-diving-lesson-from-friendly-folks-we-happened-upon-at-Alexander-Springs..jpg" title="Justin is offered a mini scuba diving lesson from friendly folks we happened upon at Alexander Springs." class="swipebox">
+        <img alt="Justin is offered a mini scuba diving lesson from friendly folks we happened upon at Alexander Springs." src="/apps/iotd/img/2016-01-21!Justin-is-offered-a-mini-scuba-diving-lesson-from-friendly-folks-we-happened-upon-at-Alexander-Springs.!thumb.jpg"/>
+    </a>
+</span>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dayContainer">
+                <h3>2016-01-18</h3>
+                <h4 class="bigDate"></h4>
+                <div class="left">
+                    
+                        <div class="locationContainer"><a href="">
+  <img src="/apps/places/img/" />
+
+    <div class="locationNameMask"></div>
+  <div class="locationNameCaption">
+    <div></div>
+    <div></div>
+  </div>
+</a>
+</div>
+                    
+                </div>
+                <div class="right">
+                    <div class="daySummary"></div>
+                    <div class="iotdsContainer">
+                        
+                            <span class="iotd-instance">
+    <a href="/apps/iotd/img/2016-01-18!Rejoicing-at-the-great-Atlantic,-at-Flager-Beach..jpg" title="Rejoicing at the great Atlantic, at Flager Beach." class="swipebox">
+        <img alt="Rejoicing at the great Atlantic, at Flager Beach." src="/apps/iotd/img/2016-01-18!Rejoicing-at-the-great-Atlantic,-at-Flager-Beach.!thumb.jpg"/>
+    </a>
+</span>
                         
                     </div>
                 </div>
